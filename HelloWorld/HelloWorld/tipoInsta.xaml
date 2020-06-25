@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.tipoInsta">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 50, 0, 0"/>
+            <On Platform="Andriod" Value="0, 0, 0, 0"/>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <Label Padding="10, 0" Text="jon_aguilar" HorizontalOptions="Start" FontAttributes="Bold" />
+        <StackLayout Padding="0, 10">
+            <Image Source="http://lorempixel.com/1920/1080/nature/3/"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Spacing="20" Padding="10, 0">
+            <Button Text="Me gusta" />
+            <Button Text="Comentar" />
+            <Button Text="Compartir" />
+        </StackLayout>
+        <StackLayout Padding="10">
+            <BoxView BackgroundColor="#f0f0f0" HeightRequest="1"/>
+        </StackLayout>
+        <StackLayout Padding="10, 0">
+            <Label Text="118 me gusta" FontAttributes="Bold"/>
+            <Label Text="This is a shot yesterday in Skanor, Sweden, when driving home, from a couple of days of work in Denmark." TextColor="#444"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
